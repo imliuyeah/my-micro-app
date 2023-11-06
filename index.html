@@ -1,0 +1,74 @@
+<!--
+ * @Author: liuye liuye@shinho.net.cn
+ * @Date: 2023-11-05 23:11:10
+ * @LastEditors: liuye liuye@shinho.net.cn
+ * @LastEditTime: 2023-11-06 20:32:20
+ * @FilePath: \my-micro-app\index.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>起步</title>
+    <script src="https://unpkg.com/lodash@4.17.20"></script>
+  </head>
+  <body>
+    <style>
+      #app {
+        position: relative;
+        top: 100px;
+      }
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #111D4A;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        width: 100%;
+        height: 75px;
+        display: flex;
+        align-items: center;
+      }
+      
+      .navbar ul {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        height: 100%;
+      }
+      
+      .navbar li {
+        padding-right: 24px;
+        height: 100%;
+      }
+      
+      .navbar li:hover {
+        opacity: 0.8;
+      }
+      
+      .navbar a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+    <div class="navbar">
+      <ul>
+        <a onclick="window.location.hash = '#/app1'">
+          <li>
+            App 1
+          </li>
+        </a>
+        <a onclick="window.location.hash = '#/app2'">
+          <li>
+            App 2
+          </li>
+        </a>
+      </ul>
+    </div>
+    <div id="app">
+    </div>
+  </body>
+</html>
